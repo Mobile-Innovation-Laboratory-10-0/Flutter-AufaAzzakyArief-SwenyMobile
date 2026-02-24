@@ -7,16 +7,11 @@
 
 *Deteksi burnout lebih awal, jaga kesehatan mental, tetap dalam kondisi flow.*
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.38.5-02569B?style=flat-square&logo=flutter)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-3.10.4-0175C2?style=flat-square&logo=dart)](https://dart.dev)
-[![GetX](https://img.shields.io/badge/GetX-4.7.3-8A2BE2?style=flat-square)](https://pub.dev/packages/get)
-[![Version](https://img.shields.io/badge/Version-1.0.0-success?style=flat-square)](pubspec.yaml)
-
 </div>
 
 ---
 
-## Deskripsi Aplikasi
+## 📖 Deskripsi Aplikasi
 
 **SWENY** (Software Engineer Wellbeing & Nurturing You) adalah aplikasi *AI Mental Health Companion* yang dirancang khusus untuk para **software developer Indonesia**. SWENY hadir untuk mendeteksi tanda-tanda burnout lebih awal, membantu developer memahami pola kerja mereka, dan memberikan pendampingan emosional berbasis kecerdasan buatan.
 
@@ -94,9 +89,16 @@ Permasalahan burnout di kalangan software developer sering kali terabaikan karen
 
 <img width="475" height="847" alt="Screenshot 2026-02-24 at 19 06 55" src="https://github.com/user-attachments/assets/44241d78-a607-46e8-9173-a4484726fd11" />
 
+| Profile |
+
+<img width="463" height="845" alt="Screenshot 2026-02-25 at 07 04 09" src="https://github.com/user-attachments/assets/a2c71744-1ecd-4f44-b0dc-f5dbef5c5184" />
+
+| Subscription |
+
+<img width="458" height="844" alt="Screenshot 2026-02-25 at 07 02 55" src="https://github.com/user-attachments/assets/f36247eb-05a4-41b6-bfc4-583b14afd6ce" />
+
+
 </div>
-
-
 
 ---
 
@@ -107,7 +109,7 @@ Permasalahan burnout di kalangan software developer sering kali terabaikan karen
 | [Flutter](https://flutter.dev) | 3.38.5 | Cross-platform UI framework |
 | [Dart](https://dart.dev) | ^3.10.4 | Bahasa pemrograman |
 | [GetX](https://pub.dev/packages/get) | ^4.7.3 | State management, routing, DI |
-| [Google Fonts](https://pub.dev/packages/google_fonts) | ^6.2.1 | Tipografi (Syne + DM Sans) |
+| [Google Fonts](https://pub.dev/packages/google_fonts) | ^6.2.1 | Tipografi (Syne dan DM Sans) |
 
 ---
 
