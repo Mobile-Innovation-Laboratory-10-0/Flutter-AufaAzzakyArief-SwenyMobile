@@ -16,13 +16,12 @@
 
 ---
 
-## 📖 Deskripsi Aplikasi
+## Deskripsi Aplikasi
 
 **SWENY** (Software Engineer Wellbeing & Nurturing You) adalah aplikasi *AI Mental Health Companion* yang dirancang khusus untuk para **software developer Indonesia**. SWENY hadir untuk mendeteksi tanda-tanda burnout lebih awal, membantu developer memahami pola kerja mereka, dan memberikan pendampingan emosional berbasis kecerdasan buatan.
 
 Permasalahan burnout di kalangan software developer sering kali terabaikan karena kurangnya alat bantu yang relevan dan mudah diakses. SWENY menjawab kebutuhan tersebut dengan pendekatan yang personal, conversational, dan berbasis data aktivitas coding.
 
-> *"SWENY ada untuk memastikan kamu tidak hanya produktif, tapi juga sehat secara mental."*
 
 ---
 
@@ -63,29 +62,41 @@ Permasalahan burnout di kalangan software developer sering kali terabaikan karen
 
 ---
 
-## 📱 Screenshot Aplikasi
+## 📱 Screenshot Aplikasi (DEVICE IPHONE 17 PRO)
 
-> **Petunjuk:** Tambahkan screenshot ke folder `docs/screenshots/` lalu ganti path di bawah ini.
 
 <div align="center">
+  
+# Aplikasi Masih menggunakan Data Dummy, Dikarenakan semua data dipass oleh teknologi sweny AI yg terintegrasi di IDE (Diluar konteks aplikasi mobile)
 
-| Splash | Onboarding | Login |
-|:---:|:---:|:---:|
-| <img src="docs/screenshots/splash.png" width="200" alt="Splash Screen"/> | <img src="docs/screenshots/onboarding.png" width="200" alt="Onboarding"/> | <img src="docs/screenshots/login.png" width="200" alt="Login"/> |
+| Splash | 
 
-| Register | Lupa Password | Dashboard |
-|:---:|:---:|:---:|
-| <img src="docs/screenshots/register.png" width="200" alt="Register"/> | <img src="docs/screenshots/forgot_password.png" width="200" alt="Lupa Password"/> | <img src="docs/screenshots/dashboard.png" width="200" alt="Dashboard"/> |
+<img width="469" height="845" alt="Screenshot 2026-02-24 at 18 59 33" src="https://github.com/user-attachments/assets/24c1c9ba-6c97-4ed1-9bdf-95f7fd3ae1f5" />
 
-| Chat AI | Insights | Profil |
-|:---:|:---:|:---:|
-| <img src="docs/screenshots/chat.png" width="200" alt="Chat AI"/> | <img src="docs/screenshots/insights.png" width="200" alt="Insights"/> | <img src="docs/screenshots/profile.png" width="200" alt="Profil"/> |
 
-| Subscription | | |
-|:---:|:---:|:---:|
-| <img src="docs/screenshots/subscription.png" width="200" alt="Subscription"/> | | |
+| Login |
+
+<img width="457" height="847" alt="Screenshot 2026-02-24 at 19 03 12" src="https://github.com/user-attachments/assets/904f1763-7759-45e8-baed-a73c0055688a" />
+
+| Register |
+
+<img width="455" height="845" alt="Screenshot 2026-02-24 at 19 03 59" src="https://github.com/user-attachments/assets/4fc3bd09-2519-4c9b-b3c1-7f39a9ea7117" />
+
+| Home |
+
+<img width="473" height="850" alt="Screenshot 2026-02-24 at 19 04 48" src="https://github.com/user-attachments/assets/48668843-f701-45d7-9cf4-c950cbce2890" />
+
+| ChatBot |
+
+<img width="473" height="846" alt="Screenshot 2026-02-24 at 19 06 36" src="https://github.com/user-attachments/assets/9785ef83-88e5-4d53-bab8-a3a4c57e5e4a" />
+
+| Insight |
+
+<img width="475" height="847" alt="Screenshot 2026-02-24 at 19 06 55" src="https://github.com/user-attachments/assets/44241d78-a607-46e8-9173-a4484726fd11" />
 
 </div>
+
+
 
 ---
 
@@ -97,49 +108,6 @@ Permasalahan burnout di kalangan software developer sering kali terabaikan karen
 | [Dart](https://dart.dev) | ^3.10.4 | Bahasa pemrograman |
 | [GetX](https://pub.dev/packages/get) | ^4.7.3 | State management, routing, DI |
 | [Google Fonts](https://pub.dev/packages/google_fonts) | ^6.2.1 | Tipografi (Syne + DM Sans) |
-
----
-
-## 🏗️ Struktur Proyek
-
-```
-sweny/
-├── lib/
-│   ├── main.dart                        # Entry point aplikasi
-│   └── app/
-│       ├── common/
-│       │   ├── theme/
-│       │   │   └── app_colors.dart      # Design token warna
-│       │   └── widgets/
-│       │       ├── sweny_button.dart    # Reusable button (4 varian, 3 ukuran)
-│       │       └── sweny_text_field.dart # Reusable text field dengan animasi
-│       ├── modules/
-│       │   ├── splash/                  # Splash screen
-│       │   ├── onboarding/              # 3-slide onboarding
-│       │   ├── login/                   # Halaman login
-│       │   ├── register/                # Halaman registrasi
-│       │   ├── forgot_password/         # Reset password
-│       │   ├── home/                    # Shell utama (IndexedStack 4 tab)
-│       │   ├── chat/                    # Tab chat AI
-│       │   ├── insights/                # Tab insights & statistik
-│       │   ├── profile/                 # Tab profil pengguna
-│       │   └── subscription/            # Halaman langganan
-│       └── routes/
-│           ├── app_pages.dart           # Definisi semua route + binding
-│           └── app_routes.dart          # Konstanta nama route
-├── assets/
-│   └── images/
-│       └── sweny_logo.png
-└── pubspec.yaml
-```
-
-Setiap modul mengikuti pola **Clean Architecture GetX**:
-```
-modul/
-  ├── bindings/   # Dependency injection
-  ├── controllers/ # Business logic & state (GetxController)
-  └── views/       # UI (GetView)
-```
 
 ---
 
@@ -231,43 +199,21 @@ flutter pub get
 flutter run
 ```
 
----
-
-## 🎨 Design System
-
-SWENY menggunakan design system dark-theme yang konsisten:
-
-| Token | Warna | Keterangan |
-|---|---|---|
-| `bgBase` | `#020B18` | Background utama |
-| `bgCard` | `#0D1F33` | Background kartu |
-| `bgElevated` | `#1A2E45` | Background elemen elevated |
-| `primary` | `#2D7DD2` | Warna aksen utama |
-| `success` | `#3DDC84` | Indikator positif/aman |
-| `warning` | `#FFB547` | Indikator peringatan |
-| `error` | `#FF4757` | Indikator bahaya/error |
-
-**Tipografi:**
-- **Syne** (Bold 700–800) → judul & heading
-- **DM Sans** (Regular 400, SemiBold 600) → body text & UI
-
----
-
 ## 👥 Tim Pengembang
 
-Dikembangkan sebagai bagian dari program **Telkom University / Bandung Techno Park**.
+Dikembangkan sebagai bagian dari program **Tugas besar Motion Laboratoryk**.
 
 ---
 
 ## 📄 Lisensi
 
-Proyek ini dibuat untuk keperluan akademik. Seluruh hak cipta dipegang oleh tim pengembang.
+Proyek ini dibuat untuk keperluan akademik. Seluruh hak cipta dipegang developer
+
+Link Video Penjelasan :
 
 ---
 
 <div align="center">
-
-Made with ❤️ for Developer Mental Health
 
 **SWENY** · *Stay in Flow, Stay Healthy*
 
